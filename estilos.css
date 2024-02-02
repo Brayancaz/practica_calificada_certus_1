@@ -1,0 +1,16 @@
+.cabecera_principal {
+    display: flex;
+    
+}
+
+.cabecera_lateral_banner {
+    width: 50em;
+    background-color: rgb(101, 101, 141);
+    text-align: center;
+    padding: 15px;
+    
+}
+.cabe_logo {
+    width: 100px;
+    height: 50px;
+}
