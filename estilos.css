@@ -21,8 +21,22 @@
 }
 
 .menu_lateral {
-    border-style: solid;
+    /* border-style: solid; */
     width: 150px;
-    height: 350px;
+    height: 23em;
     display: block;
+    background-color: rgb(210, 235, 226);
+    border-radius: 15px;
+}
+
+.titulos_menu {
+    width: 130px;
+    height: 20px;
+    background-color: rgb(102, 145, 145);
+    border-radius: 15px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+
 }
