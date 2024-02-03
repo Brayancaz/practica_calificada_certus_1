@@ -37,6 +37,9 @@
                 <li><a href="./registro.html">Registro</a></li>
             </ul>
             <ul>
+                <li><a href="./perfil.html">Perfil de usuario</a></li>
+            </ul>
+            <ul>
                 <li><a href="./contactenos.html">Contactanos</a></li>
             </ul>
         </nav>
@@ -54,7 +57,7 @@
                         <label for="email">E-mail</label>
                         <input type="text" id="email" placeholder="ingresa tu e-mail">
                         <label for="cel">Celular</label>
-                        <input type="tel" id="cel" placeholder="ingresa tu celular">
+                        <input type="tel" id="cel" placeholder="ingresa tu celular" maxlength="9" oninput="this.value = this.value.replace(/\D/g, '')"> 
                         <label for="dire">Dirección</label>
                         <input type="text" id="dire" placeholder="Ingresa tu dirección">
                         <label for="contraseña">Contraseña</label>
