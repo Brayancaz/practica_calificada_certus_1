@@ -108,3 +108,49 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
     padding: 5px;
     font-size: 9px;
 }
+.h2 {   
+    text-align: center;
+    text-decoration: underline;
+}
+
+.section_centro_productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* ****** */
+    height: 450px;
+    margin-left: 170px;
+    flex-grow: 1;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(226, 236, 233);
+}
+.articulo {
+    width: 30%;
+    margin: 5px;
+}
+
+.articulo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.articulo div {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.articulo p {
+    margin-top: 5px;
+    font-size: 9px;
+    text-align: center;
+}
+.precio {
+    width: 100%;
+    font-size: 4px;
+    color: red;
+    font-weight: bold;   
+}
