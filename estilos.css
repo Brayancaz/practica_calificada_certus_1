@@ -1,18 +1,15 @@
 .cabecera_principal {
     display: flex;
-    /* border-style: solid; */
+    align-items: center;
 }
 
 .cabecera_lateral_banner {
-    width: 800em;
-    /* height: 100px; */
-    /* background-color: rgb(101, 101, 141); */
+    width: 100%;
 }
 
 .cabecera_lateral_banner img{
     width: 100%;
     height: 100px;
-    /* background-color: rgb(101, 101, 141); */
 }
 
 .cabe_logo {
@@ -20,23 +17,33 @@
     height: 100px;
 }
 
+.contenedor_principal {
+    display: flex;
+    align-items: flex-start;
+}
+
 .menu_lateral {
-    /* border-style: solid; */
-    width: 150px;
-    height: 23em;
-    display: block;
+    float: left;
+    width: 145px;
+    height: 350px;
     background-color: rgb(210, 235, 226);
     border-radius: 15px;
+    padding: 10px;
 }
 
 .titulos_menu {
-    width: 130px;
     height: 20px;
     background-color: rgb(102, 145, 145);
     border-radius: 15px;
     text-align: center;
-    margin: 5px;
+    margin: 5px 0;
     padding: 5px;
-    float: left;
-
+}
+.section_centro {
+    height: 350px;
+    margin-left: 170px;
+    flex-grow: 1;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
 }
