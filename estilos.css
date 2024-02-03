@@ -67,6 +67,19 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
     background-color: rgb(226, 236, 233);
     justify-content: center;
     align-items: center;
+    display: flex; /*va a permitir convertir el contenedor en uno flexible*/
+    flex-direction: column; /* permite cambiar la dirección a column */
+    
+}
+.section_centro_mision {
+    height: 450px;
+    margin-left: 170px;
+    flex-grow: 1;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(226, 236, 233);
+    justify-content: center;
+    align-items: center;
 }
 .h1 {   
     text-align: center;
@@ -118,6 +131,8 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
     text-align: center;
     text-decoration: underline;
 }
+
+
 
 /* ESTILOS PARA LA PAG. PRODUCTOS */
 
@@ -174,7 +189,7 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
     width: 400px;
     height: 340px;
     padding: 5px;
-    margin: 0 auto;
+    margin: 5px auto;
     background-color: rgb(199, 216, 210);
     border-radius: 15px;
 }
@@ -219,10 +234,26 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
 	margin: 2px auto;
 	cursor: pointer;
 }
-
-.section div {
+/* armando css para submenu para perfil */
+.nav_barra {
+    display: block;
+    width: 320px;
+    height: 15px;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 9px;
+    background-color: rgb(226, 236, 233);
     display: flex;
-    width: 100%;
-    height: 10px;
-    border: solid;
+    
+}
+.nav_ul1 {
+    width: 100px;
+    margin-top: -9px;
+
+}
+.nav_ul2 {
+    width: 100px;
+    margin-top: -9px;
+    margin-left: 2px;
+    flex-direction: column-reverse;
 }

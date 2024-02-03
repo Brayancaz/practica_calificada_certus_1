@@ -23,7 +23,7 @@
     <!-- MAIN PARA AGRUPAR EL CONTENIDO CENTRAL DE LA PAGINA -->
     <main class="contendor_principal">
         <!-- MENU LATERAL -->
-        <nav class="menu_lateral">
+        <nav >
             <ul>
                 <li><a href="./index.html">Quienes somos</a></li>
             </ul>
@@ -44,22 +44,37 @@
             </ul>
         </nav>
         <!-- FIN DEL MENU LATERAL -->
-        <section class="section_centro_mision">
-            <h2 class="h2">Misión</h1>
-                <div class=text_centrado>TATUM, decoración y mobiliario , es una empresa que elabora productos personalizados para la decoración de cada espacio de su hogar con técnicas de hilorama, manualidades y carpintería.
-                    Buscando satisfacer las expectativas de sus clientes haciendo de su compra un sueño hecho realidad. Por ello contamos con colaboradores creativas que cumplen con los estándares de calidad.
-                </div>
-            <h2 class="h2">Visión</h1>
-                <div class=text_centrado>Ser una empresa de decoración de interiores y mobiliario , que elabore productos cuya calidad satisfaga las necesidades de nuestros clientes, con el objetivo de  incorporar nuevos clientes de distintas spartes del Perú
-                </div>     
+        <section class="section_centro">
+            <!-- ARMANDO NAV PARA SUB MENU -->
+            <div>Gestiona o actualiza tus datos</div>
+            <hr>
+            <nav class="nav_barra">
+                <ul class="nav_ul1">
+                    <li><a href="./perfil.html">Información</a></li>
+                </ul>
+                <ul class="nav_ul2">    
+                    <li><a href="">Contraseña</a></li>
 
+                </ul>
+            </nav>
+                <article class="ingreso_datos">
+                    <form class="form">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="ingresa tu nombre">    
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" placeholder="ingresa tu apellido">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" placeholder="ingresa tu e-mail">
+                        <label for="cel">Celular</label>
+                        <input type="tel" id="cel" placeholder="ingresa tu celular">
+                        <label for="dire">Dirección</label>
+                        <input type="text" id="dire" placeholder="Ingresa tu dirección">
+                        <div>
+                            <input type="submit" value="Guardar">
+                        </div>
+                    </form>
+                </article>
         </section>
-        <!-- ARTICLE 1 -->
-            <!-- <article> -->
-            <!-- </article> -->
-        <!-- ARTICLE 2 -->
-            <!-- <article> -->
-            <!-- </article> -->
     </main>
     <!-- PIE DE PAGINA -->
     <footer class="pie_pag">

@@ -23,7 +23,7 @@
     <!-- MAIN PARA AGRUPAR EL CONTENIDO CENTRAL DE LA PAGINA -->
     <main class="contendor_principal">
         <!-- MENU LATERAL -->
-        <nav class="menu_lateral">
+        <nav >
             <ul>
                 <li><a href="./index.html">Quienes somos</a></li>
             </ul>
@@ -45,8 +45,18 @@
         </nav>
         <!-- FIN DEL MENU LATERAL -->
         <section class="section_centro">
-            <!-- ARMANDO ARTICLE PARA REGISTRO -->
-            <div>REGISTRATE</div>
+            <!-- ARMANDO NAV PARA SUB MENU -->
+            <div>Gestiona o actualiza tus datos</div>
+            <hr>
+            <nav class="nav_barra">
+                <ul class="nav_ul1">
+                    <li><a href="./perfil.html">Información</a></li>
+                </ul>
+                <ul class="nav_ul2">    
+                    <li><a href="./perfil_contraseña.html">Contraseña</a></li>
+
+                </ul>
+            </nav>
                 <article class="ingreso_datos">
                     <form class="form">
                         <label for="nombre">Nombre</label>
@@ -59,8 +69,6 @@
                         <input type="tel" id="cel" placeholder="ingresa tu celular">
                         <label for="dire">Dirección</label>
                         <input type="text" id="dire" placeholder="Ingresa tu dirección">
-                        <label for="contraseña">Contraseña</label>
-                        <input type="password" id="contraseña" placeholder="ingresa tu contraseña">
                         <div>
                             <input type="submit" value="Guardar">
                         </div>
