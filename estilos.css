@@ -1,3 +1,4 @@
+/* ESTILOS PARA CABECERA */
 .cabecera_principal {
     display: flex;
     align-items: center;
@@ -17,12 +18,12 @@
     width: 200px;
     height: 100px;
 }
-
+/* ESTILOS PARA EL CENTRO DE LA PAGINA */
 .contenedor_principal {
     display: flex;
     align-items: flex-start;
 }
-
+/* ESTILO PARA EL NAV (MENU LATERAL) */
 nav {
     float: left;
     width: 145px;
@@ -56,6 +57,7 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
     text-align: center;    
 }
 
+/* ESTILO PARA EL SECTION - MENU CENTRAL */
 .section_centro {
     height: 450px;
     margin-left: 170px;
@@ -63,23 +65,27 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
     border-radius: 15px;
     padding: 10px;
     background-color: rgb(226, 236, 233);
+    justify-content: center;
+    align-items: center;
 }
 .h1 {   
     text-align: center;
     text-decoration: underline;
 }
 
-.section_centro div { 
+.text_centrado { 
     font-size: 10px;
     text-align: center;
     margin: 15px;
     
 }
+
 .section_centro div img {
     width: 30em;
     border-radius: 15px;
 }
 
+/* ESTILO PARA EL PIE DE PAGINA */
 .pie_pag{
     background-color: rgb(210, 235, 226);
     border-radius: 15px;
@@ -106,19 +112,20 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
     width: 100%;
     height: 5px;
     padding: 5px;
-    font-size: 9px;
+    font-size: 7px;
 }
 .h2 {   
     text-align: center;
     text-decoration: underline;
 }
 
+/* ESTILOS PARA LA PAG. PRODUCTOS */
+
 .section_centro_productos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     /* ****** */
-    height: 450px;
     margin-left: 170px;
     flex-grow: 1;
     border-radius: 15px;
@@ -153,4 +160,62 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
     font-size: 4px;
     color: red;
     font-weight: bold;   
+}
+
+.h3 {   
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* ESTILOS PARA LA PAG. REGISTRO */
+
+.ingreso_datos {
+    display: block;
+    width: 400px;
+    height: 340px;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: rgb(199, 216, 210);
+    border-radius: 15px;
+}
+
+.ingreso_datos div {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13;
+}
+
+.form {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.form label{
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+    text-align: left;
+    margin-left: 50px;
+}
+.form input{
+	display: block;
+	border: none;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left:50px;
+    margin-bottom: 2px;
+}
+
+.form input[type="submit"]{
+	border-radius: 15px;
+	background-color: rgb(102, 145, 145);
+	color: white;
+	font-size: 8px;
+	text-transform: uppercase; /*convierte el mayuscula el texto*/
+	font-weight: bold;
+	padding: 5px 5px;
+	width: 250px;
+	margin: 2px auto;
+	cursor: pointer;
 }
