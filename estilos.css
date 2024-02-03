@@ -81,7 +81,30 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
 }
 
 .pie_pag{
-    border: solid;
+    background-color: rgb(210, 235, 226);
+    border-radius: 15px;
     width: 100%;
-    height: 10px;
+    height: 40px;
+    padding: 2px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.pie_pag div img {
+    width: 4em;
+    margin-left: 15px;    
+}
+.dire {
+    text-align: center;
+    width: 400em ; /*falta saber como centrar la direccion en pie de pagina*/
+    height: 5px;
+    padding: 5px;
+    font-size: 9px;
+}
+.copyrigth {
+    text-align: right;
+    width: 100%;
+    height: 5px;
+    padding: 5px;
+    font-size: 9px;
 }
