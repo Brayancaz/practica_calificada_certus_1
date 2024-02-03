@@ -70,9 +70,18 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
 }
 
 .section_centro div { 
-    text-align: center;
     font-size: 10px;
-    text-align: justify;
+    text-align: center;
     margin: 15px;
     
+}
+.section_centro div img {
+    width: 30em;
+    border-radius: 15px;
+}
+
+.pie_pag{
+    border: solid;
+    width: 100%;
+    height: 10px;
 }
