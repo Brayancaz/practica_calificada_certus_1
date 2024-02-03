@@ -249,11 +249,27 @@ nav ul li a:hover { /*segundo texto al pasar el cursor*/
 .nav_ul1 {
     width: 100px;
     margin-top: -9px;
-
+    margin-left: 2px;
 }
 .nav_ul2 {
     width: 100px;
     margin-top: -9px;
     margin-left: 2px;
-    flex-direction: column-reverse;
+}
+.nav_ul3 {
+    width: 100px;
+    margin-top: -9px;
+    margin-left: 2px;
+}
+
+/* Armando bloque para pedido */
+.pedido{
+    display: flex;
+    text-align: right;
+    font-size: 10px;
+}
+.t1 {
+    background-color: white;
+    border:solid 1px;
+    padding: 5px;
 }
