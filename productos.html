@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./recursos/imagenes/logo-title.ico">
     <title>Tatum.Deco</title>
-    <link rel="stylesheet" href="./style/estilos.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/estilos_prod.css">
 </head>
 <body>
     <!-- CABECERA -->
@@ -19,74 +20,99 @@
             </div>
         </div>
     </header>
-
+    <br>
     <!-- MAIN PARA AGRUPAR EL CONTENIDO CENTRAL DE LA PAGINA -->
     <main class="contendor_principal">
         <!-- MENU LATERAL -->
         <nav class="menu_lateral">
-            <ul>
-                <li><a href="./index.html">Quienes somos</a></li>
+            <ul class="boton">
+                <li><a class="efecto1" href="./index.html">Quienes somos</a></li>
             </ul>
-            <ul>
-                <li><a href="./mision.html">Mision</a></li>
+            <ul class="boton">
+                <li><a class="efecto1" href="./mision.html">Mision</a></li>
             </ul>
-            <ul>
-                <li><a href="./productos.html">Productos</a></li>
+            <ul class="boton">
+                <li><a class="efecto1" href="./productos.html">Productos</a></li>
             </ul>
-            <ul>
-                <li><a href="./registro.html">Registro</a></li>
+            <ul class="boton">
+                <li><a class="efecto1" href="./registro.html">Registro</a></li>
             </ul>
-            <ul>
-                <li><a href="./perfil.html">Perfil de usuario</a></li>
+            <ul class="boton">
+                <li><a class="efecto1" href="./perfil.html">Perfil de usuario</a></li>
             </ul>
-            <ul>
-                <li><a href="./contactenos.html">Contactanos</a></li>
+            <ul class="boton">
+                <li><a class="efecto1" href="./contactenos.html">Contactanos</a></li>
             </ul>
         </nav>
         <!-- FIN DEL MENU LATERAL -->
         <section class="section_centro_productos">
-            <!-- ARTICLE 1 -->
-            <article class="articulo">
-                <img src="./recursos/productos/alcancias_acrilico.jpg" alt="producto1">
-                <div>Alcancia Pino Con Acrilico</div>
-                <p>Alcancia en madera pino con acrilo.</p>
-                <p class="precio">S/ 40.00 C/U</p>
-            </article>
-            <!-- ARTICLE 2 -->
-            <article class="articulo">
-                <img src="./recursos/productos/cuadro_peru_fila3.jpg" alt="producto2">
-                <div>Cuadro Perú</div>
-                <p>Cuadro en madera pino con diseño de Perú</p>
-                <p class="precio">S/ 40.00 C/U</p>
-            </article>
-            <!-- ARTICLE 3 -->
-            <article class="articulo">
-                <img src="./recursos/productos/jabitas_pino.jpg" alt="producto3">
-                <div>Jaba de Pino</div>
-                <p>Ideal para emprendiemientos. En tamaño de 15cm*30cm</p>
-                <p class="precio">S/ 160.00 por docena</p>
-            </article>
-            <!-- ARTICLE 4 -->
-            <article class="articulo">
-                <img src="./recursos/productos/llavero_corazon.jpg" alt="producto4">
-                <div>Repisa con Diseño de Corazón</div>
-                <p>Repisa con diseño de corazon con alas y perchero</p>
-                <p class="precio">S/ 50.00 C/U</p>
-            </article>
-            <!-- ARTICLE 5 -->
-            <article class="articulo">
-                <img src="./recursos/productos/llavero_de_4.jpg" alt="producto5">
-                <div>Perchero de 4 Color Caoba</div>
-                <p>Perchero de 4 colgadores de 35cm*12cm</p>
-                <p class="precio">S/ 45.00 C/U</p>
-            </article>     
-            <!-- ARTICLE 6 -->
-            <article class="articulo">
-                <img src="./recursos/productos/porta_foto_fila3.jpg" alt="producto6">
-                <div>Porta Fotos</div>
-                <p>Ideal para colgar tus mejores fotos, con espacio para 10 fotos.</p>
-                <p class="precio">S/ 45.00 C/U</p>
-            </article>              
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="./recursos/productos/alcancias_acrilico.jpg" class="card-img-top" alt="Producto 1">
+                      <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">Descripción corta del producto 1.</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="./recursos/productos/cuadro_peru_fila3.jpg" class="card-img-top" alt="Producto 2">
+                      <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripción corta del producto 2.</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="./recursos/productos/jabitas_pino.jpg" class="card-img-top" alt="Producto 3">
+                      <div class="card-body">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">Descripción corta del producto 3.</p>
+                        <a href="#" class="btn btn-primary">Ver detalles</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./recursos/productos/alcancias_acrilico.jpg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                          <h5 class="card-title">Producto 1</h5>
+                          <p class="card-text">Descripción corta del producto 1.</p>
+                          <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./recursos/productos/cuadro_peru_fila3.jpg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                          <h5 class="card-title">Producto 2</h5>
+                          <p class="card-text">Descripción corta del producto 2.</p>
+                          <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./recursos/productos/jabitas_pino.jpg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                          <h5 class="card-title">Producto 3</h5>
+                          <p class="card-text">Descripción corta del producto 3.</p>
+                          <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
 
         </section>
 

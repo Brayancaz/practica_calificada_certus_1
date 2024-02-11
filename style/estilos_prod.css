@@ -24,7 +24,7 @@
     align-items: flex-start;
 }
 /* ESTILO PARA EL NAV (MENU LATERAL) */
-nav {
+.menu_lateral{
     float: left;
     width: 145px;
     height: 450px;
@@ -33,7 +33,7 @@ nav {
     padding: 10px;
 }
 /*estilo para los titulos verdes*/
-nav ul { 
+.boton { 
     list-style: none;
     padding: 5px;
     margin: 5px 0;
@@ -43,20 +43,24 @@ nav ul {
     text-align: center;
 }
 /*primer texto antes de pasar el cursor*/
-nav ul li a { 
+.efecto1 { 
     display: block;
     color: #000000;
     text-decoration: none;
     text-align: center;
+    margin-top: -7px;
+    
 
 }
 /*segundo texto al pasar el cursor*/
-nav ul li a:hover { 
+a:hover { 
     width: 100%;
     height: 20px;
     background-color: rgb(226, 236, 233); 
     border-radius: 15px;
-    text-align: center;    
+    text-align: center; 
+    margin-top: -7px;  
+     
 }
 
 /* ESTILO PARA EL SECTION - MENU CENTRAL */
