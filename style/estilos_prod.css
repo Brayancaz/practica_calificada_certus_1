@@ -32,6 +32,28 @@
     border-radius: 15px;
     padding: 10px;
 }
+/* cambiando a nav superior */
+.menu_superior {
+    /* float: left;
+    width: 145px;
+    height: 450px; */
+    background-color: rgb(210, 235, 226);
+    border-radius: 30px;
+    padding: 8px;
+}
+/* boton para menu superior */
+.boton_superior {
+    list-style: none;
+    padding: 5px;
+    margin: 5px 0;
+    height: 30px;
+    background-color: rgb(102, 145, 145);
+    border-radius: 15px;
+    text-align: center;
+
+}
+
+
 /*estilo para los titulos verdes*/
 .boton { 
     list-style: none;
@@ -178,9 +200,9 @@ a:hover {
 }
 .precio {
     width: 100%;
-    font-size: 4px;
+    font-size: 15px;
     color: red;
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 .h3 {   
