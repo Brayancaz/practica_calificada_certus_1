@@ -177,7 +177,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     /* ****** */
-    margin-left: 170px;
+    /* margin-left: 170px; */
     flex-grow: 1;
     border-radius: 15px;
     padding: 10px;
@@ -211,6 +211,7 @@
     font-size: 15px;
     color: red;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .h3 {   

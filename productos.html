@@ -44,8 +44,15 @@
 
         </div>
     </nav>
-
     <br>
+    <!-- Agrega un contenedor para mostrar el carrito -->
+    <div id="carrito">
+        <h3>Carrito de Compras</h3>
+          <ul id="lista-carrito">
+            <!-- Los elementos del carrito se agregarán aquí -->
+          </ul>
+        <p>Total: <span id="total-carrito">S/ 0</span></p>
+    </div>
 
     <main class="contendor_principal">
         
@@ -57,9 +64,12 @@
                     <div class="card">
                       <img src="./recursos/productos/alcancias_acrilico.jpg" class="card-img-top" alt="Producto 1">
                       <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <p class="card-text">Descripción corta del producto 1.</p>
-                        <a class="precio">Ver detalles</a>
+                        <h5 class="card-title">Alcancia con acrilico</h5>
+                        <p class="card-text">Hecho con madera Pino y acrilico, pintado a mano en medida de 15 * 20 cm</p>
+                        <a class="precio">S/ 50</a>
+                        <button onclick="agregarAlCarrito('Producto 1', 'Alcancia con acrílico', 50)">+</button>
+                        <button onclick="eliminarDelCarrito('Producto 1')">-</button>
+                        
                       </div>
                     </div>
                   </div>
@@ -67,9 +77,11 @@
                     <div class="card">
                       <img src="./recursos/productos/cuadro_peru_fila3.jpg" class="card-img-top" alt="Producto 2">
                       <div class="card-body">
-                        <h5 class="card-title">Producto 2</h5>
-                        <p class="card-text">Descripción corta del producto 2.</p>
-                        <a class="precio">Ver detalles</a>
+                        <h5 class="card-title">Cuadro Perú</h5>
+                        <p class="card-text">Hecho con madera Pino, corte a mano, pintado a mano en medida de 30 * 20 cm</p>
+                        <a class="precio">S/ 60</a>
+                        <button onclick="agregarAlCarrito('Producto 2', 'Alcancia con acrílico', 50)">+</button>
+                        <button onclick="eliminarDelCarrito('Producto 2')">-</button>
                       </div>
                     </div>
                   </div>
@@ -77,9 +89,11 @@
                     <div class="card">
                       <img src="./recursos/productos/jabitas_pino.jpg" class="card-img-top" alt="Producto 3">
                       <div class="card-body">
-                        <h5 class="card-title">Producto 3</h5>
-                        <p class="card-text">Descripción corta del producto 3.</p>
-                        <a class="precio">Ver detalles</a>
+                        <h5 class="card-title">Jabas de madera</h5>
+                        <p class="card-text">Hecho con mandera Pino, ideal para emprendimientos. Tamaño 30 * 20 cm</p>
+                        <a class="precio">S/ 10 C/U</a>
+                        <button onclick="agregarAlCarrito('Producto 3', 'Alcancia con acrílico', 50)">+</button>
+                        <button onclick="eliminarDelCarrito('Producto 3')">-</button>
                       </div>
                     </div>
                   </div>
@@ -88,31 +102,33 @@
                 <div class="row">
                     <div class="col-md-4">
                       <div class="card">
-                        <img src="./recursos/productos/alcancias_acrilico.jpg" class="card-img-top" alt="Producto 1">
+                        <img src="./recursos/productos/porta_vino.jpg" class="card-img-top" alt="Producto 4">
                         <div class="card-body">
-                          <h5 class="card-title">Producto 1</h5>
-                          <p class="card-text">Descripción corta del producto 1.</p>
-                          <a class="precio">Ver detalles</a>
+                          <h5 class="card-title">Porta Vino</h5>
+                          <p class="card-text">Hecho con madera Pino, ideal para almacenar hasta 5 botellas de vino.</p>
+                          <a class="precio">S/ 80</a>
+                          <button onclick="agregarAlCarrito('Producto 4', 'Alcancia con acrílico', 50)">+</button>
+                          <button onclick="eliminarDelCarrito('Producto 4')">-</button>
                         </div>
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="card">
-                        <img src="./recursos/productos/cuadro_peru_fila3.jpg" class="card-img-top" alt="Producto 2">
+                        <img src="./recursos/productos/llavero_corazon.jpg" class="card-img-top" alt="Producto 5">
                         <div class="card-body">
-                          <h5 class="card-title">Producto 2</h5>
-                          <p class="card-text">Descripción corta del producto 2.</p>
-                          <a class="precio">Ver detalles</a>
+                          <h5 class="card-title">Repisa corazón</h5>
+                          <p class="card-text">Hecho con mandera Pino, ideal para colgar tus llaves. Tamaño de 20 * 15 cm</p>
+                          <a class="precio">S/ 45</a>
                         </div>
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="card">
-                        <img src="./recursos/productos/jabitas_pino.jpg" class="card-img-top" alt="Producto 3">
+                        <img src="./recursos/productos/porta_vincha_fila3.jpg" class="card-img-top" alt="Producto 6">
                         <div class="card-body">
-                          <h5 class="card-title">Producto 3</h5>
-                          <p class="card-text">Descripción corta del producto 3.</p>
-                          <a class="precio">Ver detalles</a>
+                          <h5 class="card-title">Porta Vincha</h5>
+                          <p class="card-text">Hecho con madera Pino, idea para colgar hasta 7 vinchas. Tamaño 40 * 20 cm</p>
+                          <a class="precio">S/ 50</a>
                         </div>
                       </div>
                     </div>
@@ -130,5 +146,7 @@
         <p class="dire">Dirección: Urb. El Alamo Mz. L Lote 31 - Callao <br> Celular: 992851843</p>
         <p class="copyrigth">© Tatum copyright © all rights reserved</p>
     </footer>
+    <script src="./js/scritps.js">     
+    </script>
 </body>
 </html>
