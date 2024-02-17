@@ -346,6 +346,8 @@ a {
 
 .estilo_total {
     font-weight: bold;
-    /* width: 150em; */
-    text-decoration: blueviolet;
+    /* width: 150px; */
+    justify-content: center;
+    background-color: rgb(156, 180, 180) ;
+    border-radius: 15px;
 }
