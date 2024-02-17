@@ -2,6 +2,9 @@
 let carrito = [];
 let total = 0;
 
+// let carrito;
+// let total;
+
 // función para agregar un producto al carrito
 function agregarAlCarrito(id, nombre, precio) {
   // verifica si el producto ya esta en el carrito
@@ -52,3 +55,9 @@ function mostrarCarrito() {
   total = carrito.reduce((acc, item) => acc + item.precio * item.cantidad, 0);
   totalCarrito.textContent = `S/ ${total}`;
 }
+// limpiar el carrito
+function limpiarCarrito() {
+    carrito = [];
+    total = 0;
+    mostrarCarrito();
+  }

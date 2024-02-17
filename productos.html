@@ -17,12 +17,12 @@
               <img src="./recursos/imagenes/LOGO.png" alt="logo1" class="cabe_logo">
             </a>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-9">
             <img src="./recursos/imagenes/banner/imagen1.jpg" alt="banner1" class="cabecera_lateral_banner">
           </div>
-          <div class="col-md-1">
+          <!-- <div class="col-md-1">
             <img src="./recursos/imagenes/carrito.jpg" alt="carrito" class="carrito">
-          </div>
+          </div> -->
         </div>   
       <br>
     </header>
@@ -43,17 +43,19 @@
             </div>
 
         </div>
-    </nav>
-    <br>
-    <!-- Agrega un contenedor para mostrar el carrito -->
-    <div id="carrito">
-        <h3>Carrito de Compras</h3>
+    </nav>  
+    <!-- <br> -->
+    <!-- contenedor para mostrar el carrito -->
+    <div id="carrito" class="diseñocarrito">
+        <h3 class="titulo_carrito">Carrito de Compras</h3>
           <ul id="lista-carrito">
             <!-- Los elementos del carrito se agregarán aquí -->
           </ul>
-        <p>Total: <span id="total-carrito">S/ 0</span></p>
+        <p class="estilo_total">Total: <span id="total-carrito">S/ 0</span></p>
+        <button style="border-radius: 10px;">PAGAR</button>
+        <button onclick="limpiarCarrito()" style="border-radius: 10px;">BORRAR</button>
     </div>
-
+    <br>
     <main class="contendor_principal">
         
         <!-- FIN DEL MENU LATERAL -->
@@ -80,7 +82,7 @@
                         <h5 class="card-title">Cuadro Perú</h5>
                         <p class="card-text">Hecho con madera Pino, corte a mano, pintado a mano en medida de 30 * 20 cm</p>
                         <a class="precio">S/ 60</a>
-                        <button onclick="agregarAlCarrito('Producto 2', 'Alcancia con acrílico', 50)">+</button>
+                        <button onclick="agregarAlCarrito('Producto 2', 'Cuadro Perú', 50)">+</button>
                         <button onclick="eliminarDelCarrito('Producto 2')">-</button>
                       </div>
                     </div>
@@ -92,7 +94,7 @@
                         <h5 class="card-title">Jabas de madera</h5>
                         <p class="card-text">Hecho con mandera Pino, ideal para emprendimientos. Tamaño 30 * 20 cm</p>
                         <a class="precio">S/ 10 C/U</a>
-                        <button onclick="agregarAlCarrito('Producto 3', 'Alcancia con acrílico', 50)">+</button>
+                        <button onclick="agregarAlCarrito('Producto 3', 'Jabas de madera', 50)">+</button>
                         <button onclick="eliminarDelCarrito('Producto 3')">-</button>
                       </div>
                     </div>
@@ -107,7 +109,7 @@
                           <h5 class="card-title">Porta Vino</h5>
                           <p class="card-text">Hecho con madera Pino, ideal para almacenar hasta 5 botellas de vino.</p>
                           <a class="precio">S/ 80</a>
-                          <button onclick="agregarAlCarrito('Producto 4', 'Alcancia con acrílico', 50)">+</button>
+                          <button onclick="agregarAlCarrito('Producto 4', 'Porta Vino', 50)">+</button>
                           <button onclick="eliminarDelCarrito('Producto 4')">-</button>
                         </div>
                       </div>
@@ -119,6 +121,8 @@
                           <h5 class="card-title">Repisa corazón</h5>
                           <p class="card-text">Hecho con mandera Pino, ideal para colgar tus llaves. Tamaño de 20 * 15 cm</p>
                           <a class="precio">S/ 45</a>
+                          <button onclick="agregarAlCarrito('Producto 5', 'Repisa corazón', 50)">+</button>
+                          <button onclick="eliminarDelCarrito('Producto 5')">-</button>
                         </div>
                       </div>
                     </div>
@@ -129,6 +133,8 @@
                           <h5 class="card-title">Porta Vincha</h5>
                           <p class="card-text">Hecho con madera Pino, idea para colgar hasta 7 vinchas. Tamaño 40 * 20 cm</p>
                           <a class="precio">S/ 50</a>
+                          <button onclick="agregarAlCarrito('Producto 6', 'Porta Vincha', 50)">+</button>
+                          <button onclick="eliminarDelCarrito('Producto 6')">-</button>
                         </div>
                       </div>
                     </div>

@@ -15,11 +15,11 @@
     height: 100px;
     border-radius: 15px;
 }
-
+/* 
 .carrito {
     width: 50px;
     height: 100px;
-}
+} */
 
 .cabe_logo {
     width: 200px;
@@ -105,7 +105,7 @@
     align-items: center;
     display: flex; /*va a permitir convertir el contenedor en uno flexible*/
     flex-direction: column; /* permite cambiar la dirección a column */
-    
+   
 }
 .section_centro_mision {
     height: 450px;
@@ -182,6 +182,7 @@
     border-radius: 15px;
     padding: 10px;
     background-color: rgb(226, 236, 233);
+    margin-top: -10px;
 }
 .articulo {
     width: 30%;
@@ -322,4 +323,29 @@ ul {
 }
 a {
     text-decoration: none;
+}
+
+/* Dando estilo a cuadro de carrito */
+.diseñocarrito {
+    list-style: none;
+    padding: 5px;
+    background-color: rgb(226, 236, 233);
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.titulo_carrito {
+    list-style: none;
+    /* padding: 5px; */
+    background-color: rgb(102, 145, 145);
+    text-align: center;
+    border-radius: 15px;
+    /* margin-top: 10px; */
+}
+
+.estilo_total {
+    font-weight: bold;
+    /* width: 150em; */
+    text-decoration: blueviolet;
 }
