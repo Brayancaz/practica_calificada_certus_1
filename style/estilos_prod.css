@@ -95,13 +95,14 @@
 
 /* ESTILO PARA EL SECTION - MENU CENTRAL */
 .section_centro {
-    height: 450px;
-    margin-left: 170px;
-    flex-grow: 1;
+    height: 550px;
+    margin-top: 10px;
+    /* margin-left: 170px; */
+    /* flex-grow: 1; */
     border-radius: 15px;
     padding: 10px;
     background-color: rgb(226, 236, 233);
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     display: flex; /*va a permitir convertir el contenedor en uno flexible*/
     flex-direction: column; /* permite cambiar la dirección a column */
@@ -225,7 +226,7 @@
 .ingreso_datos {
     display: block;
     width: 400px;
-    height: 340px;
+    height: 470px;
     padding: 5px;
     margin: 5px auto;
     background-color: rgb(199, 216, 210);

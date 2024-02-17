@@ -5,63 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./recursos/imagenes/logo-title.ico">
     <title>Tatum.Deco</title>
-    <link rel="stylesheet" href="./style/estilos.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/estilos_prod.css">
 </head>
 <body>
     <!-- CABECERA -->
     <header>
-        <div class="cabecera_principal">
+        <div class="row">
+          <div class="col-md-3">
             <a href="./index.html">
-                <img src="./recursos/imagenes/LOGO.png" alt="logo1" class="cabe_logo">
+              <img src="./recursos/imagenes/LOGO.png" alt="logo1" class="cabe_logo">
             </a>
-            <div class="cabecera_lateral_banner">
-                <img src="./recursos/imagenes/banner/imagen1.jpg" alt="banner1">
-            </div>
-        </div>
+          </div>
+          <div class="col-md-9">
+            <img src="./recursos/imagenes/banner/imagen1.jpg" alt="banner1" class="cabecera_lateral_banner">
+          </div>
+          <!-- <div class="col-md-1">
+            <img src="./recursos/imagenes/carrito.jpg" alt="carrito" class="carrito">
+          </div> -->
+        </div>   
+      <br>
     </header>
-
     <!-- MAIN PARA AGRUPAR EL CONTENIDO CENTRAL DE LA PAGINA -->
-    <main class="contendor_principal">
-        <!-- MENU LATERAL -->
-        <nav class="menu_lateral">
-            <ul>
-                <li><a href="./index.html">Quienes somos</a></li>
-            </ul>
-            <ul>
-                <li><a href="./mision.html">Mision</a></li>
-            </ul>
-            <ul>
-                <li><a href="./productos.html">Productos</a></li>
-            </ul>
-            <ul>
-                <li><a href="./registro.html">Registro</a></li>
-            </ul>
-            <ul>
-                <li><a href="./perfil.html">Perfil de usuario</a></li>
-            </ul>
-            <ul>
-                <li><a href="./contactenos.html">Contactanos</a></li>
-            </ul>
-        </nav>
-        <!-- FIN DEL MENU LATERAL -->
+    <nav>
+        <div class="row menu_superior">
+            <div class="col-md-2 boton_superior"><a class="efecto1" href="./index.html">Quienes somos</a>
+            </div>
+            <div class="col-md-2 boton_superior"><a class="efecto1" href="./mision.html">Misión</a>
+            </div>
+            <div class="col-md-2 boton_superior"><a class="efecto1" href="./productos.html">Productos</a>
+            </div>
+            <div class="col-md-2 boton_superior"><a class="efecto1" href="./registro.html">Registro</a>
+            </div>
+            <div class="col-md-2 boton_superior"><a class="efecto1" href="./perfil.html">Perfil de usuario</a>
+            </div>
+            <div class="col-md-2 boton_superior"><a class="efecto1" href="./contactenos.html">Contactanos</a>
+            </div>
+
+        </div>
+    </nav>  
+    <!-- <br> -->
+    <!-- FIN DEL MENU LATERAL -->
         <section class="section_centro">
             <!-- ARMANDO ARTICLE PARA REGISTRO -->
             <h3 class="h3">REGISTRATE</h1>
                 <article class="ingreso_datos">
                     <div>Registrate y convierte en parte de nuestra familia. Así podras obtener beneficios y adquirir nuestros productos.</div>
-                    <form class="form">
+                     <form class="form" id="formulario_registro"> <!--se agrego el id para la validacion js y en los inputs se va a agregar el name-->
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="ingresa tu nombre">    
+                        <input type="text" id="nombre" name="nombre" placeholder="ingresa tu nombre">
+                        <div class="invalid-feedback">Solo se permite letras</div>
+                        
                         <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido" placeholder="ingresa tu apellido">
+                        <input type="text" id="apellido" name="apellido" placeholder="ingresa tu apellido">
+                        <div class="invalid-feedback">Solo de permite letras</div>
+
                         <label for="email">E-mail</label>
-                        <input type="text" id="email" placeholder="ingresa tu e-mail">
+                        <input type="text" id="email" name="email" placeholder="ingresa tu e-mail">
+                        <div class="invalid-feedback">Correo invalido</div>
+
                         <label for="cel">Celular</label>
-                        <input type="tel" id="cel" placeholder="ingresa tu celular" maxlength="9" oninput="this.value = this.value.replace(/\D/g, '')"> 
+                        <input type="tel" id="cel" name="cel" placeholder="ingresa tu celular" maxlength="9" oninput="this.value = this.value.replace(/\D/g, '')">
+                        <div class="invalid-feedback">Solo de permite 9 digitos</div>
+
                         <label for="dire">Dirección</label>
-                        <input type="text" id="dire" placeholder="Ingresa tu dirección">
+                        <input type="text" id="dire" name="dire" placeholder="Ingresa tu dirección">
+                        <div class="invalid-feedback">Solo de permite hasta 150 caracteres</div>
+
                         <label for="contraseña">Contraseña</label>
-                        <input type="password" id="contraseña" placeholder="ingresa tu contraseña">
+                        <input type="password" id="contraseña" name="contraseña" placeholder="ingresa tu contraseña">
+                        <div class="invalid-feedback">Solo de permite hasta 8 caracteres</div>
+
                         <div>
                             <input type="submit" value="Borrar">
                             <input type="submit" name="Enviar">
@@ -78,5 +92,6 @@
         <p class="dire">Dirección: Urb. El Alamo Mz. L Lote 31 - Callao <br> Celular: 992851843</p>
         <p class="copyrigth">© Tatum copyright © all rights reserved</p>
     </footer>
+    <script src="./js/formulario_registrate.js"></script>
 </body>
 </html>
