@@ -52,32 +52,33 @@
                 <article class="ingreso_datos">
                     <div>Registrate y convierte en parte de nuestra familia. Así podras obtener beneficios y adquirir nuestros productos.</div>
                      <form class="form" id="formulario_registro"> <!--se agrego el id para la validacion js y en los inputs se va a agregar el name-->
+                        
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" placeholder="ingresa tu nombre">
-                        <div class="invalid-feedback">Solo se permite letras</div>
+                        <div id="nombre-feedback" class="invalid-feedback">Solo se permite letras</div>
                         
                         <label for="apellido">Apellido</label>
                         <input type="text" id="apellido" name="apellido" placeholder="ingresa tu apellido">
-                        <div class="invalid-feedback">Solo de permite letras</div>
+                        <div id="apellido-feedback" class="invalid-feedback">Solo de permite letras</div>
 
                         <label for="email">E-mail</label>
                         <input type="text" id="email" name="email" placeholder="ingresa tu e-mail">
-                        <div class="invalid-feedback">Correo invalido</div>
+                        <div id="email-feedback" class="invalid-feedback">Correo invalido</div>
 
                         <label for="cel">Celular</label>
                         <input type="tel" id="cel" name="cel" placeholder="ingresa tu celular" maxlength="9" oninput="this.value = this.value.replace(/\D/g, '')">
-                        <div class="invalid-feedback">Solo de permite 9 digitos</div>
+                        <div id="cel-feedback" class="invalid-feedback">Solo de permite 9 digitos</div>
 
                         <label for="dire">Dirección</label>
                         <input type="text" id="dire" name="dire" placeholder="Ingresa tu dirección">
-                        <div class="invalid-feedback">Solo de permite hasta 150 caracteres</div>
+                        <div id="dire-feedback" class="invalid-feedback">Solo de permite hasta 150 caracteres</div>
 
-                        <label for="contraseña">Contraseña</label>
-                        <input type="password" id="contraseña" name="contraseña" placeholder="ingresa tu contraseña">
-                        <div class="invalid-feedback">Solo de permite hasta 8 caracteres</div>
+                        <label for="contra">Contraseña</label>
+                        <input type="password" id="contra" name="contra" placeholder="ingresa tu contraseña">
+                        <div id="contra-feedback" class="invalid-feedback">Solo de permite hasta 8 caracteres</div>
 
                         <div>
-                            <input type="submit" value="Borrar">
+                            <input type="reset" value="Borrar">
                             <input type="submit" name="Enviar">
                         </div>
                     </form>

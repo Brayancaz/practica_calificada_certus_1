@@ -226,7 +226,7 @@
 .ingreso_datos {
     display: block;
     width: 400px;
-    height: 470px;
+    height: 480px;
     padding: 5px;
     margin: 5px auto;
     background-color: rgb(199, 216, 210);
@@ -240,7 +240,7 @@
 }
 
 .form {
-    margin-top: 15px;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -252,13 +252,13 @@
     margin-left: 50px;
 }
 .form input{
-	display: block;
+	/* display: block; */
 	border: none;
     width: 300px;
     text-align: center;
     border-radius: 15px;
     margin-left:50px;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 .form input[type="submit"]{
@@ -351,4 +351,11 @@ a {
     justify-content: center;
     background-color: rgb(156, 180, 180) ;
     border-radius: 15px;
+}
+
+.invalid-feedback {
+    display: none; /* Inicialmente oculto */
+    color: red; /* Color del texto */
+    font-size: 12px; /* Tamaño de la fuente */
+    margin-top: 5px; /* Espacio superior */
 }
