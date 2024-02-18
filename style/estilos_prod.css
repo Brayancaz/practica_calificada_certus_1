@@ -95,7 +95,7 @@
 
 /* ESTILO PARA EL SECTION - MENU CENTRAL */
 .section_centro {
-    height: 550px;
+    height: 700px;
     margin-top: 10px;
     /* margin-left: 170px; */
     /* flex-grow: 1; */
@@ -226,7 +226,7 @@
 .ingreso_datos {
     display: block;
     width: 400px;
-    height: 480px;
+    height: 980px;
     padding: 5px;
     margin: 5px auto;
     background-color: rgb(199, 216, 210);

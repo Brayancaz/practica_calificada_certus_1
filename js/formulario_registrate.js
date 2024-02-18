@@ -2,14 +2,24 @@ const formulario = document.getElementById('formulario_registro');
 const inputs = document.querySelectorAll('#formulario_registro input');
 const selects = document.querySelectorAll('#formulario_registro select');
 
+// const expresiones = {
+//     nombre: /^.{1,5}$/,
+//     apellido: /^.{4,40}$/,
+//     email: /^.{4,40}$/,
+//     cel: /^.[0-9.]{1,9}$/,
+//     dire: /^.{4,150}$/,
+//     contra: /^.{2,8}$/ 
+// }
+
 const expresiones = {
-    nombre: /^.{1,5}$/,
-    apellido: /^.{4,40}$/,
-    email: /^.{4,40}$/,
-    cel: /^.[0-9.]{1,9}$/,
-    dire: /^.{4,150}$/,
-    contra: /^.{2,8}$/ 
+    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Permite letras y espacios, de 1 a 40 caracteres
+    apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Permite letras y espacios, de 1 a 40 caracteres
+    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, // Expresión para validar email
+    cel: /^[0-9]{9}$/, // Permite 9 dígitos numéricos
+    dire: /^.{1,150}$/, // Permite cualquier caracter, de 1 a 150 caracteres
+    contra: /^.{1,8}$/ // Permite cualquier caracter, de 1 a 8 caracteres
 }
+
 
 const campos = {
     nombre: false,
@@ -49,7 +59,6 @@ const validarCampo = (expresion, input, campo) => {
     }
 };
 
-
 const validarFormulario = () => {
     let formularioValido = true;
 
@@ -62,6 +71,7 @@ const validarFormulario = () => {
 
     return formularioValido;
 };
+
 
 
 formulario.addEventListener('submit', (e) => {
@@ -101,12 +111,21 @@ formulario.addEventListener('submit', (e) => {
 
 // }
 
+// inputs.forEach((input) =>{
+//     input.addEventListener('keyup',validarFormulario);
+//     input.addEventListener('blur',validarFormulario)
+// });
+
+
 inputs.forEach((input) =>{
-    input.addEventListener('keyup',validarFormulario);
-    input.addEventListener('blur',validarFormulario)
+    input.addEventListener('keyup', () => {
+        const campo = input.getAttribute('name');
+        validarCampo(expresiones[campo], input, campo);
+    });
+    input.addEventListener('blur', () => {
+        const campo = input.getAttribute('name');
+        validarCampo(expresiones[campo], input, campo);
+    });
 });
-
-
-
 
 
